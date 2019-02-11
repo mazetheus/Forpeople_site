@@ -14,7 +14,7 @@
 
 			<div class="tile is-ancestor enderecos">
 				<div class="tile is-parent is-vertical">
-					<div class="is-child has-text-left endereco" v-for="ender in enderecos">
+					<div class="is-child has-text-left endereco" v-for="ender in enderecos" v-bind:key>
 						<p><strong>{{ender.local}}</strong></p>
 						<p class="end1-pad">{{ender.end1}}</p>
 						<p v-if="ender.end2">{{ender.end2}}</p>

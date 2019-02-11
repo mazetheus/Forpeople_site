@@ -46,7 +46,7 @@
 			},
 			onScroll() {
 				let offset = window.pageYOffset;
-				console.log(offset);
+				// console.log(offset); //error
 				if (offset > 50) {
 					this.navAffix = true;
 				} else {

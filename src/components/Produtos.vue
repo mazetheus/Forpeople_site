@@ -1,14 +1,14 @@
 <template>
 	<section class="produtos">
 		<div class="columns is-multiline is-mobile produtos-content is-vcentered is-marginless" style="background: #ffcd00;">
-			<div class="column is-3-desktop is-full-mobile">
-				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile">Conheça as nossas soluções:</p>
+			<div class="column is-3-desktop is-full-mobile" style="margin-right: -150px ; z-index: 1">
+				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile" style="z-index: 5">Conheça as nossas soluções:</p>
 			</div>
 			<div class="column is-full-mobile has-background-white">
-				<carousel-3d :display="3" :controls-visible="true" dir="ltr" :width="500" :height="500" :space="700">
+				<carousel-3d :display="3" :controls-visible="true" dir="ltr" :width="500" :height="500" :space="650">
 					<slide v-for="(slide, i) in slides" :index="i">
 						<div class="" style="height: 100%;" slot-scope="{index, isCurrent, leftIndex, rightIndex}">
-							<div class="columns is-mobile is-marginless is-vcentered" :style="{opacity: (isCurrent ? '1' : '0.4'), height: '100%'}">
+							<div class="columns is-mobile is-marginless is-vcentered" :style="{opacity: (isCurrent ? '1' : '0.35'), height: '100%'}">
 								<div class="column is-half">
 									<figure :class="'image'">
 										<img :src="require('@/assets/produtos/'+slide.src)">
@@ -25,8 +25,8 @@
 							</div>
 						</div>
 					</slide>
+				</carousel-3d>
 
-				</carousel-3d>	
 			</div>
 		</div>
 	</section>
@@ -43,18 +43,18 @@
 			return {
 				slides: [
 					{
-						title: "Totem Digital", 
-						src: 'totem.png', 
+						title: "Totem Digital",
+						src: 'totem.png',
+						text: 'O totem Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
+					},
+					{
+						title: "Raspberry",
+						src: 'rasp.png',
 						text: 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
 					},
 					{
-						title: "Raspberry", 
-						src: 'rasp.png', 
-						text: 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
-					},
-					{
-						title: "Slide 3", 
-						src: 'totem.png', 
+						title: "Slide 3",
+						src: 'totem.png',
 						text: 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
 					}
 				]
@@ -101,7 +101,7 @@
 		line-height: 40px !important;
 		text-align: center !important;
 	}
-	
+
 	.prev {
 		display: none;
 	}

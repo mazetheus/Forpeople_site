@@ -1,6 +1,6 @@
 <template>
 	<section class="conheca container">
-		<div class="columns is-vcentered is-variable is-8">
+		<div class="columns is-vcentered is-variable is-8" style="padding-top: 20px">
 			<div class="column">
 				<figure class="image">
 					<img src="../assets/totem.png"/>

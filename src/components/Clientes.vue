@@ -8,11 +8,36 @@
 			</div>
 			<div class="tile is-parent">
 				<div class="tile is-child">
-					<div class="columns is-centered is-multiline is-variable is-mobile">
-						<div class="column is-3-desktop is-4-mobile" v-for="cliente in clientes">
-							<figure class="image is-128x128">
-								<img :src="require('@/assets/clientes/'+cliente+'.png')" />
-							</figure>
+					<div class="columns is-centered is-variable is-mobile">
+						<div class="column is-3-desktop is-4-mobile" style="width: 1000px">
+							<div class="flex-container">
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/comjol.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/unilever.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/multimedical.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/favorito.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/supershow.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/leroymerlin.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/ficacomigo.jpg')" />
+								</div>
+								<div class="flexed-images">
+									<img class="flexed-images" :src="require('@/assets/clientes/toyota.jpg')" />
+								</div>
+
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -40,7 +65,29 @@
 	}
 </script>
 
+<!-- align-content: flex-start | flex-end | center | space-between | space-around | stretch; -->
+
 <style lang="scss">
+
+
+	.flexed-images{
+		padding: 5px;
+		margin: 5px;
+		color: white;
+		text-align: center;
+		width: 50%;
+		height: 50%;
+	}
+
+	.flex-container {
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: baseline;
+		align-content: center;
+	}
+
 	.clientes {
 		padding: 32px 128px;
 	}
