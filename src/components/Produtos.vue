@@ -1,7 +1,7 @@
 <template>
 	<section class="produtos">
 		<div class="columns is-multiline is-mobile produtos-content is-vcentered is-marginless" style="background: #ffcd00;">
-			<div class="column is-3-desktop is-full-mobile" style="margin-right: -150px ; z-index: 1">
+			<div class="column is-3-desktop is-full-mobile" style="margin-right: -92px ; z-index: 1">
 				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile" style="z-index: 5">Conheça as nossas soluções:</p>
 			</div>
 			<div class="column is-full-mobile has-background-white">

@@ -9,7 +9,7 @@
 			<div class="tile is-parent">
 				<div class="tile is-child">
 					<div class="columns is-centered is-variable is-mobile">
-						<div class="column is-3-desktop is-4-mobile" style="width: 1000px">
+						<div class="column is-desktop is-mobile">
 							<div class="flex-container">
 								<div class="flexed-images">
 									<img class="flexed-images" :src="require('@/assets/clientes/comjol.jpg')" />
@@ -35,8 +35,6 @@
 								<div class="flexed-images">
 									<img class="flexed-images" :src="require('@/assets/clientes/toyota.jpg')" />
 								</div>
-
-
 							</div>
 						</div>
 					</div>
@@ -71,12 +69,8 @@
 
 
 	.flexed-images{
-		padding: 5px;
-		margin: 5px;
 		color: white;
 		text-align: center;
-		width: 50%;
-		height: 50%;
 	}
 
 	.flex-container {
@@ -89,7 +83,7 @@
 	}
 
 	.clientes {
-		padding: 32px 128px;
+		padding: 2rem;
 	}
 
 	.is-vertical-centered {
@@ -99,7 +93,10 @@
 
 	@media (max-width: 768px) {
 		.clientes {
-			padding: 32px 64px;
+			padding: 5px;
+			margin: 5px;
+			/*width: 50%;
+			height: 50%;*/
 		}
 	}
 </style>

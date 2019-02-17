@@ -26,12 +26,12 @@
 <style lang="scss">
 	.missao {
 		background: #848484;
-		padding: 0px 96px;
+		padding: 0px 72px ;
 	}
 
 	.missao-content {
-		padding-top: 32px !important;
-		padding-bottom: 32px !important;
+		padding-top: 48px !important;
+		padding-bottom: 48px !important;
 	}
 
 	@media (max-width: 768px) {

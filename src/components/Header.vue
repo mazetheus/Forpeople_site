@@ -6,7 +6,7 @@
 		<nav :class="'navbar ' + (navAffix ? 'is-affix' : '')" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<a :class="'navbar-item ' + (navAffix ? 'is-affix' : '')">
-						<img src="../assets/logo.png" class=""/>
+					<img src="../assets/logo.png" class=""/>
 				</a>
 				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExample">
 					<span aria-hidden="true"></span>
@@ -64,9 +64,9 @@
 //$navbar-height: 5.25rem;
 //$navbar-item-img-max-height: 5.75rem;
 $navbar-item-color: $white;
-$navbar-item-hover-color: $dark;
+$navbar-item-hover-color: #ffcd00;
 $navbar-item-hover-background-color: transparent;
-$navbar-item-active-color: $grey;
+$navbar-item-active-color: #ffcd00;
 $navbar-item-active-background-color: transparent;
 
 $anim-speed: 0.5s;
@@ -77,8 +77,7 @@ $anim-speed: 0.5s;
 	position: absolute !important;
 	top: 50px;
 	width: 80%;
-	margin-left: 10%;
-
+	margin: 0 10%;
 	transition: width $anim-speed ease,
 							background $anim-speed ease,
 							margin-left $anim-speed ease;
@@ -105,6 +104,27 @@ $anim-speed: 0.5s;
 	max-height: 2.25rem !important;
 }
 
+.contato {
+	background: #ffcd00;
+	color: $black !important;
+	border-radius: 8px;
+	margin-left: 14px;
+}
+
+.contato.is-affix {
+	border-radius: 20px 0px 0px 20px;
+}
+
+.contato:hover {
+	background: #ffcd00 !important;
+	color: $white !important;
+}
+
+.contato.is-active {
+	background: #d8ae00 !important;
+	color: $white !important;
+}
+
 @media (max-width: 768px) {
 	//$navbar-height: 3.25rem;
 	//$navbar-item-img-max-height: 1.75rem;
@@ -116,26 +136,6 @@ $anim-speed: 0.5s;
 	.navbar-item img {
 		max-height: 1.75rem !important;
 	}
-}
-
-.contato {
-	background: #ffcd00;
-	color: $black !important;
-	border-radius: 8px;
-}
-
-.contato.is-affix {
-	border-radius: 0px;
-}
-
-.contato:hover {
-	background: #ffcd00 !important;
-	color: $white !important;
-}
-
-.contato.is-active {
-	background: #d8ae00 !important;
-	color: $white !important;
 }
 
 @import '../assets/scss/end';

@@ -50,6 +50,6 @@
 	}
 
 	.pad {
-		padding: 0px 96px;
+		padding: 2rem;
 	}
 </style>

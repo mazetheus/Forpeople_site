@@ -1,9 +1,9 @@
 <template>
 	<section class="final">
 		<div class="final-content">
-			<div class="field is-grouped">
+			<div class="field is-grouped form-controller">
 				<div class="control is-expanded">
-					<input class="input" type="text" placeholder="DEIXE SEU E-MAIL E RECEBA O PLANO COMERCIAL">
+					<input class="input form-controller-input" type="text" placeholder="DEIXE SEU E-MAIL E RECEBA O PLANO COMERCIAL">
 				</div>
 				<div class="control">
 					<a class="button is-dark is-uppercase">
@@ -24,18 +24,22 @@
 				<div class="tile is-parent">
 					<div class="tile is-child">
 						<p class="title is-1 has-text-left">Fale com a gente no WhatsApp!</p>
-						<a class="button is-success is-large is-rounded">
-							+55(84)99406-0202
+						<a class="button is-success is-large is-rounded" href="tel:+5584994060202" style="position: relative">
+							+55 (84) 99406-0202
 						</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="copyright">
-				<p class="has-text-white">2018. All Rights Reserved. For People</p>
-			</div>
+
 		</div>
+
+		<div class="copyright" style="border-top-style: solid ; border-color: #fff ; width: 118% ; margin-left: -9% ; padding-top: 25px ; border-width: 3px ; border-radius: 4px">
+			<p class="has-text-white">2019. All Rights Reserved. For People</p>
+		</div>
+
 	</section>
+
 </template>
 
 <script type="text/javascript">
@@ -44,15 +48,15 @@
 			return {
 				enderecos: [
 					{
-						local: "Natal", 
+						local: "Natal",
 						end1: "Av. Amintas Barros, 2537 - Loja 06",
 						end2: "Lagoa Nova | CEP: 59062-350 | Natal/RN",
 						tel: "Tel.: 84.3301-8085"
 					},
 					{
 						local: "São Paulo",
-						end1: "Av. Faria Lima, 4055 - Itaim Bibi",
-						end2: "CEP: 04538-133 | São Paulo/SP",
+						end1: "Av. Faria Lima, 4055",
+						end2: "Itaim Bibi | CEP: 04538-133 | São Paulo/SP",
 						tel: "Tel.: 0800 591 2035 (ramal 0654)"
 					},
 					{
@@ -69,13 +73,13 @@
 <style type="text/css" lang="scss">
 	.final {
 		background: #ffcd00;
-		padding: 48px 128px;
+		padding: 2rem;
 	}
 
 	.field {
 		border: 4px solid #fff;
-		border-radius: 8px;
-		padding: 48px;
+		border-radius: 12px;
+		padding: 32px;
 	}
 
 	.enderecos {
@@ -88,5 +92,15 @@
 
 	.end1-pad {
 		padding-top: 16px;
+	}
+
+	@media (max-width: 768px) {
+		.form-controller {
+			flex-direction: column;
+		}
+		.form-controller-input {
+			margin-bottom: 1rem;
+
+		}
 	}
 </style>

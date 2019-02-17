@@ -26,7 +26,7 @@
 	@import "../assets/scss/start";
 	$title-size: 3.8rem;
 	.conheca {
-		padding: 0px 96px 32px 96px;
+		padding: 2rem;
 	}
 
 	.image {
