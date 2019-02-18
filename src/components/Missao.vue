@@ -1,6 +1,6 @@
 <template>
 	<section class="missao">
-		<div class="columns is-marginless is-variable is-8">
+		<div class="columns is-marginless is-variable is -8">
 			<div :class="'column is-one-third missao-content'" :style="{backgroundColor: (missao.center ? '#ffcd00' : ''), color: (missao.center ? '#555' : '#fff')}" v-for="missao in missoes">
 				<p :class="'title has-text-left is-uppercase is-4'" :style="{color: (missao.center ? '#555' : '#fff')}">{{missao.title}}</p>
 				<p class="has-text-left">{{missao.content}}</p>

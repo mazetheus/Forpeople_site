@@ -3,7 +3,7 @@
 		<div class="tile is-ancestor is-vcentered">
 			<div class="tile is-3 is-parent">
 				<div class="tile is-child is-vertical-centered">
-						<p class="title is-1 has-text-left-desktop has-text-centered-desktop">Clientes:</p>
+						<p class="title is-1 has-text-left-desktop has-text-centered-desktop" style="white-space: nowrap; font-size: 2.9rem">Clientes:</p>
 				</div>
 			</div>
 			<div class="tile is-parent">
@@ -67,6 +67,9 @@
 
 <style lang="scss">
 
+	.clientes {
+		padding: 2rem 4rem;
+	}
 
 	.flexed-images{
 		color: white;
@@ -82,10 +85,6 @@
 		align-content: center;
 	}
 
-	.clientes {
-		padding: 2rem;
-	}
-
 	.is-vertical-centered {
 		display: flex;
 		align-self: center;
@@ -93,7 +92,7 @@
 
 	@media (max-width: 768px) {
 		.clientes {
-			// padding: 5px;
+			padding-top: 3rem;
 			// margin: 5px;
 			/*width: 50%;
 			height: 50%;*/

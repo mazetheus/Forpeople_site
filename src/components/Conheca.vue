@@ -7,7 +7,7 @@
 				</figure>
 			</div>
 			<div class="column has-text-left">
-				<h1 class="title">Nossa motivação é resolver problemas!</h1>
+				<h1 class="title" style="text-align: center">Nossa motivação é resolver problemas!</h1>
 				<p class="content">
 					Criamos nossos produtos para ajudar empreendimentos a fomentar vendas dentro do próprio estabelecimento, servindo como um vendedor 2.0, automatizando o processo de informações, permitindo modificações em tempo real e chamando mais atenção para a real necessidade da organização.
 				</p>
@@ -15,12 +15,6 @@
 		</div>
 	</section>
 </template>
-
-<!-- <script type="text/javascript">
-	export default {
-
-	}
-</script> -->
 
 <style lang="scss" scoped>
 	@import "../assets/scss/start";
@@ -42,6 +36,10 @@
 	@media (max-width: 768px) {
 		.image {
 			padding: 50px 0.75rem;
+		}
+
+		.content {
+			padding-bottom: 42px;
 		}
 	}
 

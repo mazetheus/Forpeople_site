@@ -1,6 +1,6 @@
 <template>
 	<section class="investimento">
-		<div class="pad" style="background-color: rgba(70, 70, 70, 0.9);">
+		<div class="pad" style="background-color: rgba(70, 70, 70, 0.94);">
 			<div class="columns is-marginless investimentos is-variable is-8">
 				<div class="column" v-for="num in numeros">
 					<h1 class="title has-text-left has-text-white is-4">{{num.title}}</h1>
@@ -43,6 +43,7 @@
 <style lang="scss">
 	.investimento {
 		background-image: url('../assets/invest_bg.jpg');
+		background-size: cover;
 	}
 
 	.investimentos {
