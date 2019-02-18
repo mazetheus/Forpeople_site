@@ -65,7 +65,8 @@
 
 <style type="text/css">
 	.produtos-content {
-		padding-left: 128px;
+		/*padding-left: 128px;*/
+		padding-left: 0.8rem;
 	}
 
 	.columns {

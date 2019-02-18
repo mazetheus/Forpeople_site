@@ -1,5 +1,9 @@
 
 -- Fix the video display;
--- Fix the padding for mobile devices; - clear
 -- Fix the fucking height of the totem carousel;
--- Fix the .pad padding; - clear;
+
+Responsividade:
+mínimo celular: 360
+mínimo celular de lado: 480
+tablet: a partir de 768
+computador: a partir de 960

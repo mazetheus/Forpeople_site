@@ -24,7 +24,7 @@
 				<div class="tile is-parent">
 					<div class="tile is-child">
 						<p class="title is-1 has-text-left">Fale com a gente no WhatsApp!</p>
-						<a class="button is-success is-large is-rounded" href="tel:+5584994060202" style="position: relative">
+						<a class="button is-success is-large is-rounded" href="tel:+5584994060202" style="float: left">
 							+55 (84) 99406-0202
 						</a>
 					</div>
@@ -34,7 +34,7 @@
 
 		</div>
 
-		<div class="copyright" style="border-top-style: solid ; border-color: #fff ; width: 118% ; margin-left: -9% ; padding-top: 25px ; border-width: 3px ; border-radius: 4px">
+		<div class="copyright">
 			<p class="has-text-white">2019. All Rights Reserved. For People</p>
 		</div>
 
@@ -94,13 +94,27 @@
 		padding-top: 16px;
 	}
 
+	.copyright {
+		border-top-style: solid;
+		border-color: #fff;
+		width: 118%;
+		margin-left: -9%;
+		padding-top: 25px;
+		border-width: 3px;
+		border-radius: 4px;
+	}
+
 	@media (max-width: 768px) {
 		.form-controller {
 			flex-direction: column;
 		}
+
 		.form-controller-input {
 			margin-bottom: 1rem;
+		}
 
+		.copyright {
+			margin-top: 70px;
 		}
 	}
 </style>

@@ -1,12 +1,12 @@
 <template>
 	<section class="conheca container">
-		<div class="columns is-vcentered is-variable is-8" style="padding-top: 20px">
+		<div class="columns is-vcentered is-variable is-8">
 			<div class="column">
 				<figure class="image">
 					<img src="../assets/totem.png"/>
 				</figure>
 			</div>
-			<div class=" column has-text-left">
+			<div class="column has-text-left">
 				<h1 class="title">Nossa motivação é resolver problemas!</h1>
 				<p class="content">
 					Criamos nossos produtos para ajudar empreendimentos a fomentar vendas dentro do próprio estabelecimento, servindo como um vendedor 2.0, automatizando o processo de informações, permitindo modificações em tempo real e chamando mais atenção para a real necessidade da organização.
@@ -16,25 +16,34 @@
 	</section>
 </template>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	export default {
 
 	}
-</script>
+</script> -->
 
 <style lang="scss" scoped>
 	@import "../assets/scss/start";
+
 	$title-size: 3.8rem;
+
 	.conheca {
-		padding: 2rem;
+		padding: 0.5rem;
 	}
 
 	.image {
-		padding: 32px;
+		padding: 50px;
 	}
 
 	.content {
-		padding-top: 48px;
+		padding-top: 0.6rem;
 	}
+
+	@media (max-width: 768px) {
+		.image {
+			padding: 50px 0.75rem;
+		}
+	}
+
 	@import "../assets/scss/end";
 </style>

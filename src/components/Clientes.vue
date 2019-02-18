@@ -93,8 +93,8 @@
 
 	@media (max-width: 768px) {
 		.clientes {
-			padding: 5px;
-			margin: 5px;
+			// padding: 5px;
+			// margin: 5px;
 			/*width: 50%;
 			height: 50%;*/
 		}
