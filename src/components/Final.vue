@@ -1,5 +1,5 @@
 <template>
-	<section class="final">
+	<section class="final" id="contato">
 		<div class="final-content">
 			<div class="field is-grouped form-controller">
 				<div class="control is-expanded">
@@ -97,8 +97,6 @@
 	.copyright {
 		border-top-style: solid;
 		border-color: #fff;
-		width: 118%;
-		margin-left: -9%;
 		padding-top: 25px;
 		border-width: 3px;
 		border-radius: 4px;

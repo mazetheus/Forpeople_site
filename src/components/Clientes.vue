@@ -1,5 +1,5 @@
 <template>
-	<section class="clientes">
+	<section class="clientes" href="#clientes">
 		<div class="tile is-ancestor is-vcentered">
 			<div class="tile is-3 is-parent">
 				<div class="tile is-child is-vertical-centered">
@@ -62,8 +62,6 @@
 		}
 	}
 </script>
-
-<!-- align-content: flex-start | flex-end | center | space-between | space-around | stretch; -->
 
 <style lang="scss">
 

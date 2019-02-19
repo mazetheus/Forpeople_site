@@ -1,7 +1,7 @@
 <template>
 	<div class="header" href="#header">
 		<figure class="image">
-			<img src="../assets/video.jpg"/>
+			<video class=header-video src="../assets/videos/For_People_Video.mp4"/>
 		</figure>
 		<nav :class="'navbar ' + (navAffix ? 'is-affix' : '')" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
@@ -69,85 +69,89 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/start';
-@import '~bulma';
+	@import '../assets/scss/start';
+	@import '~bulma';
 
-//$navbar-height: 5.25rem;
-//$navbar-item-img-max-height: 5.75rem;
-$navbar-item-color: $white;
-$navbar-item-hover-color: #ffdd22;
-$navbar-item-hover-background-color: transparent;
-$navbar-item-active-color: #ffcd00;
-$navbar-item-active-background-color: transparent;
+	//$navbar-height: 5.25rem;
+	//$navbar-item-img-max-height: 5.75rem;
+	$navbar-item-color: $white;
+	$navbar-item-hover-color: #ffdd22;
+	$navbar-item-hover-background-color: transparent;
+	$navbar-item-active-color: #ffcd00;
+	$navbar-item-active-background-color: transparent;
 
-$anim-speed: 0.4s;
+	$anim-speed: 0.4s;
 
-.navbar {
-	height: 3.75rem !important;
-	background: transparent !important;
-	position: absolute !important;
-	top: 50px;
-	width: 80%;
-	margin: 0 10%;
-	transition: width $anim-speed ease,
-							background $anim-speed ease,
-							margin-left $anim-speed ease;
-}
+	.header-video {
 
-.navbar-item img {
-	max-height: 5.75rem !important;
-	transition: max-height $anim-speed ease;
-}
-
-.navbar.is-affix {
-	background: $black !important;
-	height: 2.75rem !important;
-	position: fixed !important;
-	top: 0px;
-	width: 100%;
-	margin-left: 0;
-	transition: width $anim-speed ease,
-							background $anim-speed ease,
-							margin-left $anim-speed ease;
-}
-
-.navbar-item.is-affix img {
-	max-height: 2.25rem !important;
-}
-
-.contato {
-	background: #ffcd00;
-	color: $black !important;
-	border-radius: 8px;
-	margin-left: 14px;
-}
-
-.contato.is-affix {
-	border-radius: 20px 0px 0px 20px;
-}
-
-.contato:hover {
-	background: #ffdd22 !important;
-	color: $white !important;
-}
-
-.contato.is-active {
-	background: #ffcd00 !important;
-	color: $white !important;
-}
-
-@media (max-width: 768px) {
-	//$navbar-height: 3.25rem;
-	//$navbar-item-img-max-height: 1.75rem;
+	}
 
 	.navbar {
-		height: 3.25rem !important;
+		height: 3.75rem !important;
+		background: transparent !important;
+		position: absolute !important;
+		top: 50px;
+		width: 80%;
+		margin: 0 10%;
+		transition: width $anim-speed ease,
+								background $anim-speed ease,
+								margin-left $anim-speed ease;
 	}
 
 	.navbar-item img {
-		max-height: 1.75rem !important;
+		max-height: 5.75rem !important;
+		transition: max-height $anim-speed ease;
 	}
-}
 
-@import '../assets/scss/end';
+	.navbar.is-affix {
+		background: $black !important;
+		height: 2.75rem !important;
+		position: fixed !important;
+		top: 0px;
+		width: 100%;
+		margin-left: 0;
+		transition: width $anim-speed ease,
+								background $anim-speed ease,
+								margin-left $anim-speed ease;
+	}
+
+	.navbar-item.is-affix img {
+		max-height: 2.25rem !important;
+	}
+
+	.contato {
+		background: #ffcd00;
+		color: $black !important;
+		border-radius: 8px;
+		margin-left: 14px;
+	}
+
+	.contato.is-affix {
+		border-radius: 20px 0px 0px 20px;
+	}
+
+	.contato:hover {
+		background: #ffdd22 !important;
+		color: $white !important;
+	}
+
+	.contato.is-active {
+		background: #ffcd00 !important;
+		color: $white !important;
+	}
+
+	@media (max-width: 768px) {
+		//$navbar-height: 3.25rem;
+		//$navbar-item-img-max-height: 1.75rem;
+
+		.navbar {
+			height: 3.25rem !important;
+		}
+
+		.navbar-item img {
+			max-height: 1.75rem !important;
+		}
+	}
+
+	@import '../assets/scss/end';
 </style>

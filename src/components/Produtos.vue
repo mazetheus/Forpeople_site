@@ -1,8 +1,8 @@
 <template>
-	<section class="produtos">
-		<div class="columns is-multiline is-mobile produtos-content is-vcentered is-marginless" style="background: #ffcd00;">
-			<div class="column is-3-desktop is-full-mobile" style="z-index: 1">
-				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile" style="z-index: 5">Conheça as nossas soluções:</p>
+	<section class="produtos" href="#produtos">
+		<div class="columns is-multiline is-mobile produtos-content is-vcentered is-marginless" style="background: #ffcd00">
+			<div class="column is-3-desktop is-full-mobile" style="z-index: 1 ; padding: 2rem">
+				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile" style="z-index: 2 ; margin-right: -100px ; margin-left: 50px">Conheça as nossas soluções:</p>
 			</div>
 			<div class="column is-full-mobile has-background-white">
 				<carousel-3d :display="3" :controls-visible="true" dir="ltr" :width="500" :height="500" :space="650">
@@ -26,7 +26,6 @@
 						</div>
 					</slide>
 				</carousel-3d>
-
 			</div>
 		</div>
 	</section>
@@ -114,10 +113,8 @@
 		}
 
 		.produtos-title {
-		 padding: 64px 0px;
+			padding: 64px 0px;
 		}
 	}
-	/*.produtos-title {
-		padding-left: 96px;
-	}*/
+
 </style>
