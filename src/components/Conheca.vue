@@ -1,8 +1,8 @@
 <template>
-	<section class="conheca container">
+	<section class="conheca container" id="quemsomos">
 		<div class="columns is-vcentered is-variable is-8">
 			<div class="column" style="float: center !important ; text-align: center ; ">
-				<figure class="image is-vcentered">
+				<figure class="image is-vcentered desktop">
 					<img src="../assets/totem.png"/>
 				</figure>
 			</div>
@@ -23,6 +23,7 @@
 
 	.title {
 		padding-right: 2rem;
+		font-size: 40px !important;
 	}
 
 	.image {
@@ -35,13 +36,28 @@
 		padding-top: 0.8rem;
 	}
 
+	.mobile{
+		display: none;
+	}
+	.desktop{
+		display: inline;
+	}
+
 	@media (max-width: 768px) {
 		.title {
 			text-align: center;
 		}
 
+		.mobile{
+			display: inline;
+		}
+		.desktop{
+			display: none;
+		}
+
 		.image {
-			/*padding: 50px 0.75rem;*/
+			width: 50%;
+			height: 50%;
 			padding: 0px 0rem;
 			float: center;
 		}

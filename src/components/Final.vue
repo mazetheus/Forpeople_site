@@ -1,6 +1,7 @@
 <template>
 	<section class="final" id="contato">
 		<div class="final-content">
+		<!--
 			<div class="field is-grouped form-controller">
 				<div class="control is-expanded">
 					<input class="input form-controller-input" type="text" placeholder="DEIXE SEU E-MAIL E RECEBA O PLANO COMERCIAL">
@@ -11,7 +12,7 @@
 					</a>
 				</div>
 			</div>
-
+        -->
 			<div class="tile is-ancestor enderecos">
 				<div class="tile is-parent is-vertical">
 					<div class="is-child has-text-left endereco" v-for="ender in enderecos" v-bind:key>
@@ -23,13 +24,14 @@
 				</div>
 				<div class="tile is-parent">
 					<div class="tile is-child">
-						<p class="title is-1 has-text-left">Fale com a gente no WhatsApp!</p>
-						<a class="button is-success is-large is-rounded" href="tel:+5584994060202" style="float: left">
-							+55 (84) 99406-0202
-						</a>
+						<p class="title is-1 has-text-left">Fale com a gente!</p>
+						<h6 class="numero has-text-left">+55 (84) 3301-8085 <a href="https://api.whatsapp.com/send?phone=558433018085" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
+						<br><br><br><br><p class="title is-5 has-text-left">contato@forpeople.com</p>
+						<p class="title is-5 has-text-left"><a href="https://drive.google.com/file/d/1FYjzPQhPcYrCpWEWaCS7B5pWs-Z7Rf93/view?usp=sharing" target="_blank">Baixe nosso material informativo aqui.</a></p>
 					</div>
 				</div>
 			</div>
+
 
 
 		</div>
@@ -76,10 +78,33 @@
 		padding: 2rem;
 	}
 
+	.whats{
+		position:relative;
+		width:30px;
+		height:30px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:35px;
+		box-shadow: 2px 2px 3px #999;
+		z-index:100000;
+	}
+
+	.whats:hover {
+		color: #fff;
+		box-shadow: 2px 2px 3px #666;
+		background-color: #1ea851;
+	}
+
 	.field {
 		border: 4px solid #fff;
 		border-radius: 12px;
 		padding: 32px;
+	}
+
+	.numero{
+		font-size: 25px;
 	}
 
 	.enderecos {

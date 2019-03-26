@@ -1,5 +1,5 @@
 <template>
-	<section class="clientes" href="#clientes">
+	<section class="clientes" id="clientes">
 		<div class="tile is-ancestor is-vcentered">
 			<div class="tile is-3 is-parent">
 				<div class="tile is-child is-vertical-centered">

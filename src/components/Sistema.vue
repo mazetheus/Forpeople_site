@@ -1,5 +1,5 @@
 <template>
-	<section class="sistema has-background-light" href="#sistema">
+	<section class="sistema has-background-light" id="sistema">
 		<div class="tile is-marginless is-ancestor has-background-white">
 			<div class="tile is-parent is-4 content-description">
 				<div class="tile is-child sis-cont-head">
@@ -51,7 +51,7 @@
 
 .content-description {
 	z-index: 1 ;
-	margin-right: -118px;
+	margin-right: 0px;
 }
 
 .tyle-master {

@@ -1,13 +1,13 @@
 <template>
-	<section class="produtos" href="#produtos">
+	<section class="produtos" id="solucoes">
 		<div class="columns is-multiline is-mobile produtos-content is-vcentered is-marginless" style="background: #ffcd00">
 			<div class="column is-3-desktop is-full-mobile" style="z-index: 1 ; padding: 2rem">
-				<p class="title produtos-title is-1 has-text-black-bis has-text-left-desktop has-text-centered-mobile" style="z-index: 2 ; margin-right: -100px ; margin-left: 50px">Conheça as nossas soluções:</p>
+				<p class="title produtos-title has-text-black-bis has-text-left-desktop has-text-left-mobile" style="z-index: 2">Conheça as nossas soluções:</p>
 			</div>
 			<div class="column is-full-mobile has-background-white">
 				<carousel-3d :display="3" :controls-visible="true" dir="ltr" :width="500" :height="500" :space="650">
 					<slide v-for="(slide, i) in slides" :index="i">
-						<div class="" style="height: 100%;" slot-scope="{index, isCurrent, leftIndex, rightIndex}">
+						<div class="" style="height: 100%;" slot-scope="{index, isCurrent}">
 							<div class="columns is-mobile is-marginless is-vcentered" :style="{opacity: (isCurrent ? '1' : '0.35'), height: '100%'}">
 								<div class="column is-half">
 									<figure :class="'image'">
@@ -17,8 +17,8 @@
 								<div class="column is-half has-background-white" v-if="isCurrent">
 									<div class="is-vertical-centered">
 										<div>
-											<p class="title has-text-left" style="color: #ffcd00;">{{slide.title}}</p>
-											<p class="has-text-left">{{slide.text}}</p>
+											<p class="titleCarousel has-text-left" style="color: #ffcd00;">{{slide.title}}</p>
+											<p class="textCarousel has-text-left">{{slide.text}}</p>
 										</div>
 									</div>
 								</div>
@@ -44,18 +44,13 @@
 					{
 						title: "Totem Digital",
 						src: 'totem.png',
-						text: 'O totem Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
+						text: 'Permite um amplo alcance dentro do Ponto de Venda (PDV) e viabiliza uma mídia segmentada para cada departamento/setor ou até mesmo outras unidades e franquias de empresas.'
 					},
 					{
-						title: "Raspberry",
+						title: "Box Digital",
 						src: 'rasp.png',
-						text: 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
+						text: 'O box digital é o software desenvolvido para realizar a comunicação remota entre o totem e a ForPeople. Ideal para empresas que já possuem sistema de TV e que buscam uma solução viável e criativa de inovar.'
 					},
-					{
-						title: "Slide 3",
-						src: 'totem.png',
-						text: 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Cevadis im ampola pa arma uma pindureta. Mé faiz elementum girarzis, nisi eros vermeio. Delegadis gente finis, bibendum egestas augue arcu ut est.'
-					}
 				]
 			}
 		}
@@ -77,7 +72,8 @@
 	}
 
 	.produtos-title {
-		padding-left: 24px;
+		padding-left: 0px;
+		margin-right: 0px;
 	}
 
 	.carousel-3d-slide {
@@ -110,10 +106,20 @@
 
 		.produtos-content {
 			padding: 0px;
+			margin-left: 0;
 		}
 
 		.produtos-title {
-			padding: 64px 0px;
+			padding: 0px;
+			margin-left: 0;
+			font-size: 20px;
+		}
+		.titleCarousel{
+			font-size: 20px;
+		}
+
+		.textCarousel{
+			font-size: 15px;
 		}
 	}
 

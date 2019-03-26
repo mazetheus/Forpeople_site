@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header></Header>
-    <div class="">
       <conheca></conheca>
       <produtos></produtos>
       <investimento></investimento>
@@ -10,7 +9,6 @@
       <clientes></clientes>
       <Final></Final>
     </div>
-  </div>
 </template>
 
 <script>

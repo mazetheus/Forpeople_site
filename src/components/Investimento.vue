@@ -1,5 +1,5 @@
 <template>
-	<section class="investimento" href="#investimento">
+	<section class="investimento" id="investimento">
 		<div class="pad" style="background-color: rgba(70, 70, 70, 0.94);">
 			<div class="columns is-marginless investimentos is-variable is-8">
 				<div class="column" v-for="num in numeros">
