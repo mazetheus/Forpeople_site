@@ -1,6 +1,6 @@
 <template>
 	<div class="header" id="header">
-		<video controls class=header-video>
+		<video controls poster="../assets/video.jpg" class=header-video>
 			<source src="@/assets/videos/For_People_Video.mp4"/>	
 		</video>
 		<nav :class="'navbar ' + (navAffix ? 'is-affix' : '')" role="navigation" aria-label="main navigation">
@@ -79,6 +79,7 @@
 	.header-video {
         width:100%;
 		height: auto;
+		margin-top: 0px !important;
 	}
 
 	.navbar {

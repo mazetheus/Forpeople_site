@@ -4,7 +4,7 @@
 			<div class="column is-3-desktop is-full-mobile" style="z-index: 1 ; padding: 2rem">
 				<p class="title produtos-title has-text-black-bis has-text-left-desktop has-text-left-mobile" style="z-index: 2">Conheça as nossas soluções:</p>
 			</div>
-			<div class="column is-full-mobile has-background-white">
+			<div class="column is-full-mobile slide-white">
 				<carousel-3d :display="3" :controls-visible="true" dir="ltr" :width="500" :height="500" :space="650">
 					<slide v-for="(slide, i) in slides" :index="i">
 						<div class="" style="height: 100%;" slot-scope="{index, isCurrent}">
@@ -14,7 +14,7 @@
 										<img :src="require('@/assets/produtos/'+slide.src)">
 									</figure>
 								</div>
-								<div class="column is-half has-background-white" v-if="isCurrent">
+								<div class="column is-half" v-if="isCurrent">
 									<div class="is-vertical-centered">
 										<div>
 											<p class="titleCarousel has-text-left" style="color: #ffcd00;">{{slide.title}}</p>
@@ -51,6 +51,16 @@
 						src: 'rasp.png',
 						text: 'O box digital é o software desenvolvido para realizar a comunicação remota entre o totem e a ForPeople. Ideal para empresas que já possuem sistema de TV e que buscam uma solução viável e criativa de inovar.'
 					},
+					{
+						title: "Expositor ForPeople",
+						src: 'expositor.png',
+						text: 'Monitor com o ForPeople box, pode ser instalado na vitrine da empresa, corredor ou qualquer outro locar que a informação possa ser vista.'
+					},
+					{
+						title: "Video Wall",
+						src: 'wall.png',
+						text: 'Telas conectadas e mapeadas para exibirem uma informação mais completa e dinâmica.'
+					},
 				]
 			}
 		}
@@ -58,6 +68,10 @@
 </script>
 
 <style type="text/css">
+
+	.slide-white{
+		background: white;
+	}
 	.produtos-content {
 		/*padding-left: 128px;*/
 		padding-left: 0.8rem;
@@ -77,8 +91,10 @@
 	}
 
 	.carousel-3d-slide {
-		background: transparent;
-		border: none;
+		border: none !important;
+		border-style: none !important;
+		background-color: white !important;
+		background: white !important;
 		padding-right: 32px;
 	}
 

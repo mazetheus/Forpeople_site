@@ -6,8 +6,9 @@ import vueScrollto from 'vue-scrollto'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+import { faFileDownload, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faWhatsapp)
+library.add(faWhatsapp, faFileDownload, faEnvelope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(vueScrollto)

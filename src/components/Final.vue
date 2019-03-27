@@ -1,18 +1,6 @@
 <template>
 	<section class="final" id="contato">
 		<div class="final-content">
-		<!--
-			<div class="field is-grouped form-controller">
-				<div class="control is-expanded">
-					<input class="input form-controller-input" type="text" placeholder="DEIXE SEU E-MAIL E RECEBA O PLANO COMERCIAL">
-				</div>
-				<div class="control">
-					<a class="button is-dark is-uppercase">
-						Clique Aqui!
-					</a>
-				</div>
-			</div>
-        -->
 			<div class="tile is-ancestor enderecos">
 				<div class="tile is-parent is-vertical">
 					<div class="is-child has-text-left endereco" v-for="ender in enderecos" v-bind:key>
@@ -26,8 +14,8 @@
 					<div class="tile is-child">
 						<p class="title is-1 has-text-left">Fale com a gente!</p>
 						<h6 class="numero has-text-left">+55 (84) 3301-8085 <a href="https://api.whatsapp.com/send?phone=558433018085" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
-						<br><br><br><br><p class="title is-5 has-text-left">contato@forpeople.com</p>
-						<p class="title is-5 has-text-left"><a href="https://drive.google.com/file/d/1FYjzPQhPcYrCpWEWaCS7B5pWs-Z7Rf93/view?usp=sharing" target="_blank">Baixe nosso material informativo aqui.</a></p>
+						<p class="email title is-5 has-text-left"><a href = "mailto: contato@forpeople.com.br"><font-awesome-icon icon="envelope" /></a> &nbsp;&nbsp;  contato@forpeople.com.br</p>
+						<p class="download title is-5 has-text-left"><a href="http://www.forpeople.com.br/media/QuemSomos_ForPeople.pdf" target="_blank"><font-awesome-icon icon="file-download" /> &nbsp;&nbsp; Baixe nosso material informativo aqui.</a></p>
 					</div>
 				</div>
 			</div>
@@ -37,7 +25,7 @@
 		</div>
 
 		<div class="copyright">
-			<p class="has-text-white">2019. All Rights Reserved. For People</p>
+			<p class="has-text-white">2019. All Rights Reserved. For People.</p>
 		</div>
 
 	</section>
@@ -89,6 +77,14 @@
 		font-size:35px;
 		box-shadow: 2px 2px 3px #999;
 		z-index:100000;
+	}
+
+	.email{
+		padding-top: 100px;
+	}
+
+	.download{
+		padding-left: 5px;
 	}
 
 	.whats:hover {

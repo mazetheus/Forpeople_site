@@ -7,7 +7,7 @@
 				</figure>
 			</div>
 			<div class="column has-text-left">
-				<h1 class="title">Nossa motivação é resolver problemas!</h1>
+				<h1 class="title">Nossa motivação é fazer sua empresa vender mais!</h1>
 				<p class="content">
 					Criamos nossos produtos para ajudar empreendimentos a fomentar vendas dentro do próprio estabelecimento, servindo como um vendedor 2.0, automatizando o processo de informações, permitindo modificações em tempo real e chamando mais atenção para a real necessidade da organização.
 				</p>
