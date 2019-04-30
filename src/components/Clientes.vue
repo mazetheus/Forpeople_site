@@ -89,11 +89,11 @@
 	}
 
 	@media (max-width: 768px) {
+		.flexed-images{
+			width: 50%;
+		}
 		.clientes {
 			padding-top: 3rem;
-			// margin: 5px;
-			/*width: 50%;
-			height: 50%;*/
 		}
 	}
 </style>

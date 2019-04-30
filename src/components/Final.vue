@@ -14,7 +14,7 @@
 					<div class="tile is-child">
 						<p class="title is-1 has-text-left">Fale com a gente!</p>
 						<h6 class="numero has-text-left">+55 (84) 3301-8085 <a href="https://api.whatsapp.com/send?phone=558433018085" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
-						<p class="email title is-5 has-text-left"><a href = "mailto: contato@forpeople.com.br"><font-awesome-icon icon="envelope" /></a> &nbsp;&nbsp;  contato@forpeople.com.br</p>
+						<p class="email title is-5 has-text-left"><a href = "mailto: contato@forpeople.com.br" target="_blank"><font-awesome-icon icon="envelope" /></a> &nbsp;&nbsp;  contato@forpeople.com.br</p>
 						<p class="download title is-5 has-text-left"><a href="http://www.forpeople.com.br/media/QuemSomos_ForPeople.pdf" target="_blank"><font-awesome-icon icon="file-download" /> &nbsp;&nbsp; Baixe nosso material informativo aqui.</a></p>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 	}
 
 	.email{
-		padding-top: 100px;
+		padding-top: 20px;
 	}
 
 	.download{
@@ -134,6 +134,10 @@
 
 		.copyright {
 			margin-top: 70px;
+		}
+
+		.title{
+			font-size: 20px !important;
 		}
 	}
 </style>

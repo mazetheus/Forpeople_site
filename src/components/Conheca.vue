@@ -3,7 +3,7 @@
 		<div class="columns is-vcentered is-variable is-8">
 			<div class="column" style="float: center !important ; text-align: center ; ">
 				<figure class="image is-vcentered desktop">
-					<img src="../assets/totem.png"/>
+					<img class="totem-img" src="../assets/totem.png"/>
 				</figure>
 			</div>
 			<div class="column has-text-left">
@@ -56,8 +56,8 @@
 		}
 
 		.image {
-			width: 50%;
-			height: 50%;
+			width: 30%;
+			height: auto;
 			padding: 0px 0rem;
 			float: center;
 		}

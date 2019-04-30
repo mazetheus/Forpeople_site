@@ -3,7 +3,7 @@
 		<div class="pad" style="background-color: rgba(70, 70, 70, 0.94);">
 			<div class="columns is-marginless investimentos is-variable is-8">
 				<div class="column" v-for="num in numeros">
-					<h1 class="title has-text-left has-text-white is-4">{{num.title}}</h1>
+					<h1 data-aos="fade-right" data-aos-delay="1000" class="title has-text-left has-text-white is-4">{{num.title}}</h1>
 					<p class="subtitle has-text-left has-text-white is-6">{{num.content}}</p>
 				</div>
 			</div>
@@ -11,7 +11,7 @@
 		<div class="pad" style="background-color: rgba(250, 205, 0, 0.9);">
 			<div class="columns is-marginless investimentos is-variable is-8">
 				<div class="column" v-for="met in metricas">
-					<h1 class="title has-text-left is-uppercase is-4">{{met.title}}</h1>
+					<h1 data-aos="fade-right" data-aos-delay="1000" class="title has-text-left is-uppercase is-4">{{met.title}}</h1>
 					<p class="subtitle has-text-left is-6">{{met.content}}</p>
 				</div>
 			</div>
@@ -44,6 +44,7 @@
 	.investimento {
 		background-image: url('../assets/invest_bg.jpg');
 		background-size: cover;
+		background-attachment: fixed;
 	}
 
 	.investimentos {
